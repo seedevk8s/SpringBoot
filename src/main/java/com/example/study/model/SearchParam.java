@@ -6,6 +6,8 @@ public class SearchParam {
     private String email;
     private int page;
 
+    // { "account" : "",  "email" : "", "page" :  0}
+
     public String getAccount() {
         return account;
     }
