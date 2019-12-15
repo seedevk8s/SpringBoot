@@ -2,6 +2,7 @@ package com.example.study.controller.api;
 
 import com.example.study.ifs.CrudInterface;
 import com.example.study.model.network.Header;
+import com.example.study.model.network.request.UserApiRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -11,7 +12,7 @@ public class UserApiController implements CrudInterface {
 
     @Override
     @PostMapping("")        //api/user
-    public Header create() {
+    public Header<UserApiController> create(@RequestBody UserApiRequest userApiRequest) {
         return null;
     }
 
